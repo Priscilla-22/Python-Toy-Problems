@@ -29,3 +29,10 @@ def sum_of_intergers_solution(B):
     return max_sum
 
 
+########## Challenge  ##########
+def letter_occurrence_solution(N):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    letters = "".join([alphabet[i] for i in range(N // 2)]) * 2
+    if N % 2 == 1:
+        letters += alphabet[N // 2]
+    return letters
