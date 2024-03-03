@@ -1,6 +1,4 @@
 ########## Challenge 1 ##########
-
-
 def bricks_moves_solution(A):
     moves = 0
 
