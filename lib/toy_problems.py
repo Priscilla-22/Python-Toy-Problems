@@ -14,3 +14,5 @@ class Bricks:
                     return -1
 
         return moves
+    
+
