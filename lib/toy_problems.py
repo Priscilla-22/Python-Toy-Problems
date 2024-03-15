@@ -18,7 +18,7 @@ def solution(A):
     return moves
 
 
-print(solution([7, 14, 10]))
+print(solution([11, 10, 8, 12, 8, 10, 11]))
 
 
 ########## Challenge 2 ##########
@@ -37,16 +37,16 @@ def sum_of_intergers_solution(B):
     return max_sum if max_sum != -1 else -1
 
 
-print(sum_of_intergers_solution([51, 71, 17, 42]))  # Expected output: 93
+print(sum_of_intergers_solution([51, 71, 17, 42]))
 
 
 ########## Challenge 3 ##########
-def letter_occurrence_solution(N):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    letters = "".join([alphabet[i] for i in range(N // 2)]) * 2
-    if N % 2 == 1:
-        letters += alphabet[N // 2]
-    return letters
+def solution(N):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    result = ''
+    for i in range(N):
+        result += alphabet[i % 26]
+    return result
 
 
-print(letter_occurrence_solution(30))
+print(solution(30))
